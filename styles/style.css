@@ -200,26 +200,6 @@ section {
   padding-right: 15px;
 }
 
-/* =========================== TABLAS (Si usás alguna) =========================== */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 1rem;
-}
-
-table th,
-table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-table th {
-  background-color: #f9f5f1;
-  color: #b35d24;
-}
-
 /* =========================== MODALES =========================== */
 
 .modal-content {
