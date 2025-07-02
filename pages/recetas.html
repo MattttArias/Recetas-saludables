@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recetas - Recetas Saludables</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Recetas Saludables</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="recetas.html">Recetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h1 class="text-center mb-5">Recetas sin TACC</h1>
+
+    <!-- ========== Carrot cake ========= -->
+    <section class="mb-5">
+      <h2 class="mb-3" style="color:#b35d24;">Carrot Cake sin TACC</h2>
+      <div id="carouselCarrotCake" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-sm bg-white p-3">
+          <div class="carousel-item active">
+            <img src="../assets/images/carrot-cake.jpg" class="d-block mx-auto img-centro" alt="Carrot Cake">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/Carrot-cake-with-monchou-topping.jpg" class="d-block mx-auto img-centro" alt="Carrot Cake con frosting">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCarrotCake" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCarrotCake" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-leer px-4" data-bs-toggle="modal" data-bs-target="#modalCarrotCake">
+          Ver paso a paso
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Carrot cake -->
+    <div class="modal fade" id="modalCarrotCake" tabindex="-1" aria-labelledby="modalCarrotCakeLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-warning-subtle">
+            <h5 class="modal-title" id="modalCarrotCakeLabel" style="color:#b35d24; font-family: 'DynaPuff', cursive;">
+              Ingredientes y paso a paso - Carrot Cake sin TACC
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Ingredientes:</h6>
+            <ul>
+              <li>2 zanahorias ralladas</li>
+              <li>1 taza de harina sin TACC</li>
+              <li>2 huevos</li>
+              <li>½ taza de azúcar mascabo</li>
+              <li>⅓ taza de aceite vegetal</li>
+              <li>1 cdta. de polvo de hornear</li>
+              <li>Canela a gusto</li>
+              <li>Esencia de vainilla</li>
+              <li>Nueces (opcional)</li>
+            </ul>
+            <h6 class="mt-4">Paso a paso:</h6>
+            <ol>
+              <li>Precalentar el horno a 180ºC y preparar el molde con manteca y harina sin TACC.</li>
+              <li>Mezclar ingredientes secos: harina sin gluten, polvo de hornear y canela.</li>
+              <li>Agregar los ingredientes húmedos: huevos, azúcar y aceite. Batir hasta integrar.</li>
+              <li>Incorporar zanahoria rallada y nueces picadas.</li>
+              <li>Verter la mezcla en el molde y hornear por 35-40 minutos.</li>
+              <li>Dejar enfriar y servir (opcional: agregar frosting).</li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Budín de banana ========= -->
+    <section class="mb-5">
+      <h2 class="mb-3" style="color:#b35d24;">Budín de Banana sin TACC</h2>
+      <div id="carouselBudinBanana" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-sm bg-white p-3">
+          <div class="carousel-item active">
+            <img src="../assets/images/budin_de_banana_sin_tacc_.jpg" class="d-block mx-auto img-centro" alt="Budín de banana saludable" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBudinBanana" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBudinBanana" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-leer px-4" data-bs-toggle="modal" data-bs-target="#modalBudinBanana">
+          Ver paso a paso
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Budín de banana -->
+    <div class="modal fade" id="modalBudinBanana" tabindex="-1" aria-labelledby="modalBudinBananaLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-warning-subtle">
+            <h5 class="modal-title" id="modalBudinBananaLabel" style="color:#b35d24; font-family: 'DynaPuff', cursive;">
+              Ingredientes y paso a paso - Budín de Banana sin TACC
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Ingredientes:</h6>
+            <ul>
+              <li>2 bananas maduras pisadas</li>
+              <li>1 taza de harina de arroz o sin TACC</li>
+              <li>2 huevos</li>
+              <li>¼ taza de aceite vegetal</li>
+              <li>½ taza de azúcar mascabo o stevia</li>
+              <li>1 cdta. polvo de hornear</li>
+              <li>Canela y esencia de vainilla</li>
+            </ul>
+            <h6 class="mt-4">Paso a paso:</h6>
+            <ol>
+              <li>Precalentar el horno a 180ºC y engrasar un molde para budín.</li>
+              <li>Aplastar bien las bananas maduras hasta obtener un puré.</li>
+              <li>Mezclar el puré con huevos, aceite y esencia de vainilla.</li>
+              <li>Agregar harina sin TACC, polvo de hornear y endulzante natural.</li>
+              <li>Verter la mezcla en el molde y hornear por 35-40 minutos.</li>
+              <li>Dejar enfriar antes de desmoldar.</li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Galletas ========= -->
+    <section class="mb-5">
+      <h2 class="mb-3" style="color:#b35d24;">Galletas de Avena y Manzana</h2>
+      <div id="carouselGalletas" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded shadow-sm bg-white p-3">
+          <div class="carousel-item active">
+            <img src="../assets/images/galletas-de-avena-sin-tacc.jpg" class="d-block mx-auto img-centro" alt="Galletas de avena sin TACC" />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalletas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGalletas" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-leer px-4" data-bs-toggle="modal" data-bs-target="#modalGalletas">
+          Ver paso a paso
+        </button>
+      </div>
+    </section>
+
+    <!-- Modal Galletas -->
+    <div class="modal fade" id="modalGalletas" tabindex="-1" aria-labelledby="modalGalletasLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-warning-subtle">
+            <h5 class="modal-title" id="modalGalletasLabel" style="color:#b35d24; font-family: 'DynaPuff', cursive;">
+              Ingredientes y paso a paso - Galletas de Avena y Manzana
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Ingredientes:</h6>
+            <ul>
+              <li>1 taza de avena sin gluten</li>
+              <li>1 manzana rallada</li>
+              <li>1 huevo</li>
+              <li>2 cdas. de azúcar mascabo</li>
+              <li>1 cda. de aceite vegetal</li>
+              <li>Canela a gusto</li>
+              <li>1 cdta. polvo de hornear</li>
+            </ul>
+            <h6 class="mt-4">Paso a paso:</h6>
+            <ol>
+              <li>Precalentar el horno a 175ºC y preparar una bandeja con papel manteca.</li>
+              <li>Mezclar la manzana rallada con avena, canela y azúcar.</li>
+              <li>Agregar huevo y aceite, y formar una masa húmeda.</li>
+              <li>Formar bolitas, aplastar y colocar en la bandeja.</li>
+              <li>Hornear 15-18 minutos o hasta dorar.</li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-light text-center py-3 mt-5 rounded shadow-sm">
+    <p class="mb-2">© 2025 Mati Web. Todos los derechos reservados.</p>
+    <img src="../assets/images/logotipo-gf.png" alt="Logo de la web" class="logo-footer mb-2" />
+    <div class="redes d-flex justify-content-center gap-3">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="../assets/images/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="../assets/images/instagram.png" alt="Instagram" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

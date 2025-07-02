@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto - Recetas Saludables</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="bg-light p-3 rounded mb-4 text-center shadow-sm">
+    <h1 class="display-4">Contacto</h1>
+    <nav>
+      <ul class="nav justify-content-center gap-3">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="mx-auto" style="max-width: 500px;">
+      <h2 style="color: #b35d24;">Contacto</h2>
+      <p>¿Querés enviarnos una sugerencia, compartir tu receta o simplemente saludar? Completá el siguiente formulario y te responderemos a la brevedad.</p>
+
+      <form action="#" method="post" class="form-contacto d-flex flex-column gap-3">
+        <label for="nombre" class="fw-bold">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required class="form-control" />
+
+        <label for="email" class="fw-bold">Email:</label>
+        <input type="email" id="email" name="email" required class="form-control" />
+
+        <label for="mensaje" class="fw-bold">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required class="form-control"></textarea>
+
+        <button type="submit" class="btn btn-primary mt-3">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-light text-center py-3 mt-5 rounded shadow-sm">
+    <p class="mb-2">© 2025 Mati Web. Todos los derechos reservados.</p>
+    <img src="../assets/images/logotipo-gf.png" alt="Logo de la web" class="logo-footer mb-2" />
+    <div class="redes d-flex justify-content-center gap-3">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="../assets/images/facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="../assets/images/instagram.png" alt="Instagram" />
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
