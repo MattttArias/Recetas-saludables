@@ -3,17 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Recetas - Recetas Saludables</title>
+  <title>Recetas Saludables - Recetas</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
   <link rel="stylesheet" href="../styles/style.css" />
+
+  <!-- Fuente DynaPuff -->
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm mb-4">
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm mb-4 rounded">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">Recetas Saludables</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold" href="../index.html">Recetas Saludables</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -32,15 +40,18 @@
     <h1 class="text-center mb-5">Recetas sin TACC</h1>
 
     <!-- ========== Carrot cake ========= -->
-    <section class="mb-5">
+    <section id="carrot-cake" class="mb-5">
       <h2 class="mb-3" style="color:#b35d24;">Carrot Cake sin TACC</h2>
       <div id="carouselCarrotCake" class="carousel slide mb-3" data-bs-ride="carousel">
         <div class="carousel-inner rounded shadow-sm bg-white p-3">
           <div class="carousel-item active">
-            <img src="../assets/images/carrot-cake.jpg" class="d-block mx-auto img-centro" alt="Carrot Cake">
+            <img src="../assets/images/carrot-cake.jpg" class="d-block mx-auto img-centro" alt="Carrot Cake" />
           </div>
           <div class="carousel-item">
-            <img src="../assets/images/Carrot-cake-with-monchou-topping.jpg" class="d-block mx-auto img-centro" alt="Carrot Cake con frosting">
+            <img src="../assets/images/Carrot-cake-with-monchou-topping.jpg" class="d-block mx-auto img-centro" alt="Carrot Cake con frosting" />
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/carrot-sintacc.avif" class="d-block mx-auto img-centro" alt="Carrot Cake con frosting" />
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselCarrotCake" data-bs-slide="prev">
@@ -98,12 +109,18 @@
     </div>
 
     <!-- ========== Budín de banana ========= -->
-    <section class="mb-5">
+    <section id="budin-banana" class="mb-5">
       <h2 class="mb-3" style="color:#b35d24;">Budín de Banana sin TACC</h2>
       <div id="carouselBudinBanana" class="carousel slide mb-3" data-bs-ride="carousel">
         <div class="carousel-inner rounded shadow-sm bg-white p-3">
           <div class="carousel-item active">
             <img src="../assets/images/budin_de_banana_sin_tacc_.jpg" class="d-block mx-auto img-centro" alt="Budín de banana saludable" />
+          </div>
+          <div class="carousel-item active">
+            <img src="../assets/images/budin-banana-receta-taccjpg.webp" class="d-block mx-auto img-centro" alt="Budín de banana saludable" />
+          </div>
+          <div class="carousel-item active">
+            <img src="../assets/images/budin-banana-tacc.webp" class="d-block mx-auto img-centro" alt="Budín de banana saludable" />
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselBudinBanana" data-bs-slide="prev">
@@ -159,12 +176,18 @@
     </div>
 
     <!-- ========== Galletas ========= -->
-    <section class="mb-5">
+    <section id="galletas-sin-tacc" class="mb-5">
       <h2 class="mb-3" style="color:#b35d24;">Galletas de Avena y Manzana</h2>
       <div id="carouselGalletas" class="carousel slide mb-3" data-bs-ride="carousel">
         <div class="carousel-inner rounded shadow-sm bg-white p-3">
           <div class="carousel-item active">
             <img src="../assets/images/galletas-de-avena-sin-tacc.jpg" class="d-block mx-auto img-centro" alt="Galletas de avena sin TACC" />
+          </div>
+          <div class="carousel-item active">
+            <img src="../assets/images/avena-manzana-sintacc.jpg" class="d-block mx-auto img-centro" alt="Galletas de avena sin TACC" />
+          </div>
+          <div class="carousel-item active">
+            <img src="../assets/images/Galletas-de-avena-y-manzana-tacc.jpg" class="d-block mx-auto img-centro" alt="Galletas de avena sin TACC" />
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalletas" data-bs-slide="prev">
@@ -194,21 +217,20 @@
           <div class="modal-body">
             <h6>Ingredientes:</h6>
             <ul>
-              <li>1 taza de avena sin gluten</li>
+              <li>1 taza de avena en hojuelas</li>
               <li>1 manzana rallada</li>
-              <li>1 huevo</li>
-              <li>2 cdas. de azúcar mascabo</li>
-              <li>1 cda. de aceite vegetal</li>
-              <li>Canela a gusto</li>
-              <li>1 cdta. polvo de hornear</li>
+              <li>2 huevos</li>
+              <li>¼ taza de miel o endulzante natural</li>
+              <li>1 cdta. de canela</li>
+              <li>½ cdta. de polvo de hornear sin gluten</li>
             </ul>
             <h6 class="mt-4">Paso a paso:</h6>
             <ol>
-              <li>Precalentar el horno a 175ºC y preparar una bandeja con papel manteca.</li>
-              <li>Mezclar la manzana rallada con avena, canela y azúcar.</li>
-              <li>Agregar huevo y aceite, y formar una masa húmeda.</li>
-              <li>Formar bolitas, aplastar y colocar en la bandeja.</li>
-              <li>Hornear 15-18 minutos o hasta dorar.</li>
+              <li>Precalentar el horno a 180ºC y preparar la bandeja con papel manteca.</li>
+              <li>Mezclar todos los ingredientes hasta obtener una masa homogénea.</li>
+              <li>Formar bolitas y aplastarlas ligeramente sobre la bandeja.</li>
+              <li>Hornear por 15-20 minutos hasta que estén doradas.</li>
+              <li>Dejar enfriar y disfrutar.</li>
             </ol>
           </div>
           <div class="modal-footer">
@@ -217,9 +239,9 @@
         </div>
       </div>
     </div>
+
   </main>
 
-  <!-- FOOTER -->
   <footer class="bg-light text-center py-3 mt-5 rounded shadow-sm">
     <p class="mb-2">© 2025 Mati Web. Todos los derechos reservados.</p>
     <img src="../assets/images/logotipo-gf.png" alt="Logo de la web" class="logo-footer mb-2" />
@@ -233,9 +255,11 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS (Popper + Bootstrap) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 

@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 20px 0;
   line-height: 1.6;
+  overflow-x: hidden; /* evita scroll horizontal */
 }
 
 /* =========================== TIPOGRAFÍA =========================== */
@@ -27,16 +28,18 @@ h2, h3 {
 
 /* =========================== HEADER Y FOOTER =========================== */
 
-/* Bootstrap con el padding/margin, acá controlo bordes y sombras */
-
 header, footer {
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 15px 0;
 }
 
 footer p {
   margin: 5px 0;
+  font-size: 0.9rem;
+  color: #666;
 }
 
 .logo-footer {
@@ -46,14 +49,13 @@ footer p {
 
 /* =========================== NAVEGACIÓN =========================== */
 
-/* Dejo que Bootstrap gestione nav, pero ajusto links */
-
 nav a.nav-link {
   color: #914f00;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
   transition: color 0.3s, background-color 0.3s;
+  text-decoration: none;
 }
 
 nav a.nav-link:hover,
@@ -114,6 +116,8 @@ article {
   transition: background-color 0.3s ease;
   text-decoration: none;
   border: none;
+  cursor: pointer;
+  user-select: none;
 }
 
 .btn-leer:hover,
@@ -125,11 +129,33 @@ article {
 
 /* =========================== FORMULARIO DE CONTACTO =========================== */
 
+.form-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
 .form-contacto label {
   font-weight: bold;
   margin-top: 10px;
+  display: block;
 }
 
+.form-contacto input,
+.form-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+}
 
 .form-contacto input:focus,
 .form-contacto textarea:focus {
@@ -142,13 +168,15 @@ article {
 
 .redes {
   margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .redes img {
   height: 30px;
-  margin: 0 10px;
-  transition: transform 0.3s ease;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .redes img:hover,
@@ -157,11 +185,74 @@ article {
   outline: none;
 }
 
+/* =========================== SECCIONES ADICIONALES =========================== */
+
+section {
+  padding-bottom: 40px;
+}
+
+/* Para contenedores centrales */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* =========================== TABLAS (Si usás alguna) =========================== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f9f5f1;
+  color: #b35d24;
+}
+
+/* =========================== MODALES =========================== */
+
+.modal-content {
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.modal-header {
+  background-color: #fff4e6;
+  border-bottom: 2px solid #b35d24;
+  color: #b35d24;
+  font-family: "DynaPuff", cursive;
+  font-size: 1.25rem;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: #333;
+}
+
+.modal-footer {
+  background-color: #fff4e6;
+  border-top: 1px solid #b35d24;
+}
+
 /* =========================== RESPONSIVE AJUSTES =========================== */
 
 @media (max-width: 768px) {
   h1 {
     font-size: 36px;
+  }
+  h2, h3 {
+    font-size: 1.4rem;
   }
   .btn-leer {
     padding: 8px 14px;
@@ -173,10 +264,43 @@ article {
   .img-centro {
     max-height: 250px;
   }
+  nav a.nav-link {
+    padding: 5px 6px;
+    font-size: 0.9rem;
+  }
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 480px) {
-
+  body {
+    padding: 10px 0;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+  nav a.nav-link {
+    padding: 4px 6px;
+    font-size: 0.85rem;
+  }
+  .btn-leer {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  article {
+    padding: 8px 10px;
+  }
+  .img-centro {
+    max-height: 180px;
+  }
+  .form-contacto {
+    padding: 10px;
+  }
 }
 
 

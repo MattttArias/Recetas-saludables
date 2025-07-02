@@ -3,42 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto - Recetas Saludables</title>
+  <title>Recetas Saludables - Contacto</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
   <link rel="stylesheet" href="../styles/style.css" />
+
+  <!-- Fuente DynaPuff -->
   <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header class="bg-light p-3 rounded mb-4 text-center shadow-sm">
-    <h1 class="display-4">Contacto</h1>
-    <nav>
-      <ul class="nav justify-content-center gap-3">
-        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
-        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm mb-4 rounded">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">Recetas Saludables</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="recetas.html">Recetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <main class="container">
-    <section class="mx-auto" style="max-width: 500px;">
-      <h2 style="color: #b35d24;">Contacto</h2>
-      <p>¿Querés enviarnos una sugerencia, compartir tu receta o simplemente saludar? Completá el siguiente formulario y te responderemos a la brevedad.</p>
+    <h1 class="text-center mb-5">Contacto</h1>
 
-      <form action="#" method="post" class="form-contacto d-flex flex-column gap-3">
-        <label for="nombre" class="fw-bold">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required class="form-control" />
-
-        <label for="email" class="fw-bold">Email:</label>
-        <input type="email" id="email" name="email" required class="form-control" />
-
-        <label for="mensaje" class="fw-bold">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required class="form-control"></textarea>
-
-        <button type="submit" class="btn btn-primary mt-3">Enviar mensaje</button>
+    <section class="mx-auto" style="max-width: 600px;">
+      <form class="form-contacto" action="#" method="POST" novalidate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" class="form-control" placeholder="Escribí tu mensaje aquí..." required></textarea>
+        </div>
+        <button type="submit" class="btn-leer btn w-100">Enviar</button>
       </form>
     </section>
   </main>
@@ -56,6 +71,8 @@
     </div>
   </footer>
 
+  <!-- Bootstrap JS (Popper + Bootstrap) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
